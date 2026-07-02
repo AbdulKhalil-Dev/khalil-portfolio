@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import LoadingBar from "./components/LoadingBar";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
       className={`${inter.variable} ${calistoga.variable} h-full antialiased`}
     >
       <body className={twMerge("bg-gray-900 text-white font-sans")}>
+        <LoadingBar />
         {children}
       </body>
     </html>
