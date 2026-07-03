@@ -8,7 +8,7 @@ import { HeroOrbit } from "../components/HeroOrbit";
 
 const Hero = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div className="flex flex-col items-center justify-center py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{ backgroundImage: `url(${grainImage.src})` }}
@@ -17,9 +17,11 @@ const Hero = () => {
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
       <div className="size-[1220px] hero-ring"></div>
-      <HeroOrbit size={800}/>
+      <HeroOrbit size={800}
+      rotation={0}>
         <LuAtom className='size-14 text-emerald-300' />
-      <div className="container">
+      </HeroOrbit>
+      <div className="container relative z-10 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <Image
             src={myImg}
@@ -49,10 +51,10 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 hover:bg-gray-950/10 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
-            <BsArrowDown className="size-4 font-bold animate-bounce [animation-duration:3s]" />
+            <BsArrowDown className="size-4 font-bold animate-smooth-bounce" />
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span className="animate-waving inline-block origin-bottom-right">
+            <span className="animate-waving inline-block origin-bottom-right text-2xl">
               👋
             </span>
             <span className="font-semibold">Let&apos;s Connect</span>
@@ -60,7 +62,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Hero;
