@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
+import Project from './sections/Project'
 
 
 
@@ -9,6 +10,7 @@ const page = () => {
     <>
     <Header />
     <Hero />
+    <Project />
     </>
   )
 }

@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en" suppressHydrationWarning
       className={`${inter.variable} ${calistoga.variable}`}
     >
-        <body className={twMerge(inter.className, "bg-gray-900 text-white antialiased min-h-full")}>
+        <body className={twMerge(inter.className, "bg-gray-900 text-white antialiased min-h-screen relative")}>
         <LoadingBar />
         {children}
       </body>

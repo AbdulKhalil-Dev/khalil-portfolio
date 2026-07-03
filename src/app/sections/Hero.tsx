@@ -4,14 +4,14 @@ import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import { BsArrowDown } from "react-icons/bs";
 import { WiStars } from "react-icons/wi";
-import { GiSparkles } from "react-icons/gi";
 import { FaRegDotCircle } from "react-icons/fa";
-
+import { LuSparkle } from "react-icons/lu";
 import { HeroOrbit } from "../components/HeroOrbit";
 
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{ backgroundImage: `url(${grainImage.src})` }}
@@ -20,40 +20,40 @@ const Hero = () => {
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
       <div className="size-[1220px] hero-ring"></div>
-      <HeroOrbit size={740}
+      <HeroOrbit size={775}
       rotation={-70}>
-        <WiStars className='size-20 text-orange-300' />
+        <WiStars className='animate-spin-slow size-20 text-orange-300' />
       </HeroOrbit>
-      <HeroOrbit size={675} rotation={25}>
-      <WiStars className="size-12 text-orange-300"/>
+      <HeroOrbit size={670} rotation={25}>
+      <WiStars className="animate-spin-reverse-slow size-12 text-orange-300"/>
       </HeroOrbit>
       <HeroOrbit size={590}
       rotation={98}>
-        <WiStars className='size-8 text-orange-300' />
+        <WiStars className='animate-spin-slow size-8 text-orange-300' />
       </HeroOrbit>
       <HeroOrbit size={430}
       rotation={-14}>
-        <GiSparkles className='size-6 text-emerald-300/10' />
+        <LuSparkle className='size-6 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={440}
       rotation={79}>
-        <GiSparkles className='size-4 text-emerald-300/10' />
+        <LuSparkle className='size-4 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={730}
       rotation={-28}>
-        <GiSparkles className='size-10 text-emerald-300/10' />
+        <LuSparkle className='size-10 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={710}
       rotation={120}>
-        <GiSparkles className='size-8 text-emerald-300/10' />
+        <LuSparkle className='size-8 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={144}>
-        <GiSparkles className='size-6 text-emerald-300/10' />
+        <LuSparkle className='size-6 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={-40}>
-        <GiSparkles className='size-5 text-emerald-300/10' />
+        <LuSparkle className='size-5 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={720}
       rotation={85}>
@@ -67,6 +67,7 @@ const Hero = () => {
       rotation={-5}>
         <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
       </HeroOrbit>
+      </div>
       
       <div className="container relative z-10 flex flex-col items-center">
         <div className="flex flex-col items-center">
