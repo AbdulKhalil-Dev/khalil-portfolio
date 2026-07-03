@@ -3,7 +3,10 @@ import myImg from "@/assets/images/Khalil.jpeg";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import { BsArrowDown } from "react-icons/bs";
-import { LuAtom } from "react-icons/lu";
+import { WiStars } from "react-icons/wi";
+import { GiSparkles } from "react-icons/gi";
+import { FaRegDotCircle } from "react-icons/fa";
+
 import { HeroOrbit } from "../components/HeroOrbit";
 
 const Hero = () => {
@@ -17,10 +20,62 @@ const Hero = () => {
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
       <div className="size-[1220px] hero-ring"></div>
-      <HeroOrbit size={800}
-      rotation={0}>
-        <LuAtom className='size-14 text-emerald-300' />
+      <HeroOrbit size={840}
+      rotation={-70}>
+        <WiStars className='size-20 text-orange-300' />
       </HeroOrbit>
+      <HeroOrbit size={650} rotation={20}>
+      <WiStars className="size-12 text-orange-300"/>
+      </HeroOrbit>
+      <HeroOrbit size={590}
+      rotation={98}>
+        <WiStars className='size-8 text-orange-300' />
+      </HeroOrbit>
+      <HeroOrbit size={430}
+      rotation={-14}>
+        <GiSparkles className='size-8 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={440}
+      rotation={79}>
+        <GiSparkles className='size-5 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={730}
+      rotation={-28}>
+        <GiSparkles className='size-10 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={710}
+      rotation={144}>
+        <GiSparkles className='size-14 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={510}
+      rotation={144}>
+        <GiSparkles className='size-10 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={510}
+      rotation={-40}>
+        <GiSparkles className='size-10 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={720}
+      rotation={85}>
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={570}
+      rotation={170}>
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={750}
+      rotation={-5}>
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/20' />
+      </HeroOrbit>
+      {/* <HeroOrbit size={620}
+      rotation={-30}>
+        <FaRegDotCircle className='size-3 rounded-full text-orange-300/15' />
+      </HeroOrbit>
+      <HeroOrbit size={620}
+      rotation={-30}>
+        <FaRegDotCircle className='size-3 rounded-full text-orange-300/15' />
+      </HeroOrbit> */}
+      
       <div className="container relative z-10 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <Image
@@ -28,7 +83,7 @@ const Hero = () => {
             alt="Abdul Khalil Developer"
             className="size-[130px] rounded-t-full border border-gray-800 shadow-[0_0_4px_rgba(34,197,94,0.4)]"
           />
-          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+          <div className="bg-gray-950 border border-gray-800 px-3.5 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="relative flex h-2 w-2 items-center justify-center"> 
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600 drop-shadow-[0_0_8px_#16a34a]"></span>
@@ -49,12 +104,12 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 hover:bg-gray-950/10 px-6 h-12 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white/15 hover:bg-gray-950/10 px-5 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
-            <BsArrowDown className="size-4 font-bold animate-smooth-bounce" />
+            <BsArrowDown className="animate-smooth-bounce" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span className="animate-waving inline-block origin-bottom-right text-2xl">
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-5 rounded-xl">
+            <span className="animate-waving inline-block origin-bottom-right">
               👋
             </span>
             <span className="font-semibold">Let&apos;s Connect</span>
