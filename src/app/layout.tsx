@@ -28,10 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${inter.variable} ${calistoga.variable} h-full antialiased`}
+      lang="en" suppressHydrationWarning
+      className={`${inter.variable} ${calistoga.variable}`}
     >
-      <body className={twMerge("bg-gray-900 text-white font-sans")}>
+        <body className={twMerge(inter.className, "bg-gray-900 text-white antialiased min-h-full")}>
         <LoadingBar />
         {children}
       </body>

@@ -20,11 +20,11 @@ const Hero = () => {
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
       <div className="size-[1220px] hero-ring"></div>
-      <HeroOrbit size={840}
+      <HeroOrbit size={740}
       rotation={-70}>
         <WiStars className='size-20 text-orange-300' />
       </HeroOrbit>
-      <HeroOrbit size={650} rotation={20}>
+      <HeroOrbit size={675} rotation={25}>
       <WiStars className="size-12 text-orange-300"/>
       </HeroOrbit>
       <HeroOrbit size={590}
@@ -33,48 +33,40 @@ const Hero = () => {
       </HeroOrbit>
       <HeroOrbit size={430}
       rotation={-14}>
-        <GiSparkles className='size-8 text-emerald-300/20' />
+        <GiSparkles className='size-6 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={440}
       rotation={79}>
-        <GiSparkles className='size-5 text-emerald-300/20' />
+        <GiSparkles className='size-4 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={730}
       rotation={-28}>
-        <GiSparkles className='size-10 text-emerald-300/20' />
+        <GiSparkles className='size-10 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={710}
-      rotation={144}>
-        <GiSparkles className='size-14 text-emerald-300/20' />
+      rotation={120}>
+        <GiSparkles className='size-8 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={144}>
-        <GiSparkles className='size-10 text-emerald-300' />
+        <GiSparkles className='size-6 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={-40}>
-        <GiSparkles className='size-10 text-emerald-300' />
+        <GiSparkles className='size-5 text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={720}
       rotation={85}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/20' />
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={570}
       rotation={170}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/20' />
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
       </HeroOrbit>
       <HeroOrbit size={750}
       rotation={-5}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/20' />
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
       </HeroOrbit>
-      {/* <HeroOrbit size={620}
-      rotation={-30}>
-        <FaRegDotCircle className='size-3 rounded-full text-orange-300/15' />
-      </HeroOrbit>
-      <HeroOrbit size={620}
-      rotation={-30}>
-        <FaRegDotCircle className='size-3 rounded-full text-orange-300/15' />
-      </HeroOrbit> */}
       
       <div className="container relative z-10 flex flex-col items-center">
         <div className="flex flex-col items-center">
