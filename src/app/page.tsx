@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
-import Project from './sections/Project'
+import { Projects } from './sections/Projects'
+import Tape from './sections/Tape'
 
 
 
@@ -10,7 +11,8 @@ const page = () => {
     <>
     <Header />
     <Hero />
-    <Project />
+    <Projects />
+    <Tape />
     </>
   )
 }

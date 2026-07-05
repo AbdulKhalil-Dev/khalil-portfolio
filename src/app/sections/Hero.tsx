@@ -4,8 +4,8 @@ import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import { BsArrowDown } from "react-icons/bs";
 import { WiStars } from "react-icons/wi";
+import { IoStar } from "react-icons/io5"
 import { FaRegDotCircle } from "react-icons/fa";
-import { LuSparkle } from "react-icons/lu";
 import { HeroOrbit } from "../components/HeroOrbit";
 
 const Hero = () => {
@@ -25,47 +25,47 @@ const Hero = () => {
         <WiStars className='animate-spin-slow size-20 text-orange-300' />
       </HeroOrbit>
       <HeroOrbit size={670} rotation={25}>
-      <WiStars className="animate-spin-reverse-slow size-12 text-orange-300"/>
+      <WiStars className="animate-spin-slow size-12 text-orange-300"/>
       </HeroOrbit>
       <HeroOrbit size={590}
       rotation={98}>
-        <WiStars className='animate-spin-slow size-8 text-orange-300' />
+        <WiStars className='animate-spin-reverse-slow size-10 text-orange-300' />
       </HeroOrbit>
       <HeroOrbit size={430}
       rotation={-14}>
-        <LuSparkle className='size-6 text-emerald-300/10' />
+        <IoStar className='animate-spin-reverse-slow size-6 text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={440}
       rotation={79}>
-        <LuSparkle className='size-4 text-emerald-300/10' />
+        <IoStar className='size-4 text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={730}
       rotation={-28}>
-        <LuSparkle className='size-10 text-emerald-300/10' />
+        <IoStar className='size-10 text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={710}
       rotation={120}>
-        <LuSparkle className='size-8 text-emerald-300/10' />
+        <IoStar className='size-8 text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={144}>
-        <LuSparkle className='size-6 text-emerald-300/10' />
+        <IoStar className='animate-spin-slow size-6 text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={-40}>
-        <LuSparkle className='size-5 text-emerald-300/10' />
+        <IoStar className='size-5 text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={720}
       rotation={85}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={570}
       rotation={170}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/15' />
       </HeroOrbit>
       <HeroOrbit size={750}
       rotation={-5}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/10' />
+        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/15' />
       </HeroOrbit>
       </div>
       

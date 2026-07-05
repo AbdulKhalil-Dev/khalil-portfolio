@@ -17,6 +17,12 @@
 
 }
 
+@layer utilities {
+  .container {
+    @apply lg:max-w-5xl
+  }
+}
+
 /* Custom Keyframes for Orbit Rotation */
 @keyframes spin-slow {
   from {
