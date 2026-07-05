@@ -5,6 +5,19 @@
   --font-serif: var(--font-serif);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.background-gradient {
+  background: radial-gradient(
+    circle at top center,
+    hsla(230, 100%, 60%, 0.5) 0%,
+    hsla(222, 0%, 0%, 0) 50%,
+    hsla(222, 0%, 0%, 0) 100%
+  );
+}
+
 /* Hero Section */
 @layer base {
   .nav-item {
