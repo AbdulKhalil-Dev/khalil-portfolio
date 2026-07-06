@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "@/assets/images/Khalil.jpeg";
+import myImg from "@/assets/images/khalil-img.jpg";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import { BsArrowDown } from "react-icons/bs";
@@ -22,50 +22,50 @@ const Hero = () => {
       <div className="size-[1220px] hero-ring"></div>
       <HeroOrbit size={775}
       rotation={-70}>
-        <WiStars className='animate-spin-slow size-20 text-orange-300' />
+        <WiStars className='animate-spin-slow size-20 text-white' />
       </HeroOrbit>
       <HeroOrbit size={670} rotation={25}>
-      <WiStars className="animate-spin-slow size-12 text-orange-300"/>
+      <WiStars className="animate-spin-slow size-12 text-white"/>
       </HeroOrbit>
       <HeroOrbit size={590}
       rotation={98}>
-        <WiStars className='animate-spin-reverse-slow size-10 text-orange-300' />
+        <WiStars className='animate-spin-reverse-slow size-10 text-white' />
       </HeroOrbit>
       <HeroOrbit size={430}
       rotation={-14}>
-        <IoStar className='animate-spin-reverse-slow size-6 text-emerald-300/15' />
+        <IoStar className='animate-spin-reverse-slow size-6 text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={440}
       rotation={79}>
-        <IoStar className='size-4 text-emerald-300/15' />
+        <IoStar className='size-4 text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={730}
       rotation={-28}>
-        <IoStar className='size-10 text-emerald-300/15' />
+        <IoStar className='size-10 text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={710}
       rotation={120}>
-        <IoStar className='size-8 text-emerald-300/15' />
+        <IoStar className='size-8 text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={144}>
-        <IoStar className='animate-spin-slow size-6 text-emerald-300/15' />
+        <IoStar className='animate-spin-slow size-6 text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={510}
       rotation={-40}>
-        <IoStar className='size-5 text-emerald-300/15' />
+        <IoStar className='size-5 text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={720}
       rotation={85}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/15' />
+        <FaRegDotCircle className='size-3 rounded-full text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={570}
       rotation={170}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/15' />
+        <FaRegDotCircle className='size-3 rounded-full text-white/10' />
       </HeroOrbit>
       <HeroOrbit size={750}
       rotation={-5}>
-        <FaRegDotCircle className='size-3 rounded-full text-emerald-300/15' />
+        <FaRegDotCircle className='size-3 rounded-full text-white/10' />
       </HeroOrbit>
       </div>
       
@@ -74,12 +74,12 @@ const Hero = () => {
           <Image
             src={myImg}
             alt="Abdul Khalil Developer"
-            className="size-[130px] rounded-t-full border border-gray-800 shadow-[0_0_4px_rgba(34,197,94,0.4)]"
+            className="size-[120px] rounded-t-full border border-gray-950"
           />
-          <div className="bg-gray-950 border border-gray-800 px-3.5 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="relative flex h-2 w-2 items-center justify-center"> 
+          <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 inline-flex items-center gap-3.5 rounded-lg">
+            <div className="relative flex h-1.5 w-1.5 items-center justify-center"> 
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600 drop-shadow-[0_0_8px_#16a34a]"></span>
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-600 drop-shadow-[0_0_8px_#16a34a]"></span>
             </div>
             <div className="text-sm font-semibold">
               Available for new projects
