@@ -1,4 +1,5 @@
-import { MdStars } from 'react-icons/md'
+import { HiSparkles } from "react-icons/hi2";
+
 
 
 const words= [
@@ -25,7 +26,7 @@ const Tape = () => {
       {words.map(word => (
         <div key={word} className="inline-flex gap-4 items-center">
           <span className="text-gray-900 uppercase font-extrabold text-sm">{word}</span>
-          <MdStars className="size-5 text-gray-900 -rotate-12"/>
+          <HiSparkles className="size-5 text-gray-900 -rotate-12"/>
         </div>
       ))}
       </div>
