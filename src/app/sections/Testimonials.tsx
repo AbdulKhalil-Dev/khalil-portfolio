@@ -5,7 +5,6 @@ import memojiAvatar4 from "@/assets/images/memoji-avatar-4.jpeg";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.jpeg";
 import SectionHeader from "../components/SectionHeader";
 import Image from "next/image";
-import grainImage from "@/assets/images/grain.jpg";
 import { Card } from "../components/Card";
 import { FaStar } from "react-icons/fa";
 
@@ -18,21 +17,21 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "David Miller",
+    name: "Daniel Brooks",
     position: "Product Manager @ DevStream",
-    text: "Working with Khalil was a fantastic experience. His attention to detail, clean coding practices, and ability to deliver complex pixel-perfect UI on time exceeded our expectations.",
+    text: "Professional, reliable, and delivered beyond expectations.",
     avatar: memojiAvatar2,
     rating: 5,
   },
   {
-    name: "Elena Rostova",
-    position: "Creative Director @ PixelVibe Studio",
-    text: "Abdul Khalil didn't just build our web app; he significantly optimized its performance. Our conversion rates went up by 40% thanks to the smooth animations and seamless UX.",
+    name: "Omar Hassan",
+    position: "Startup Founder",
+    text: "Working with Khalil was a fantastic experience. His attention to detail, clean coding practices, and ability to deliver complex pixel-perfect UI on time exceeded our expectations.",
     avatar: memojiAvatar3,
     rating: 4,
   },
   {
-    name: "Marcus Thorne",
+    name: "Ethan Walker",
     position: "CTO @ CloudNexus",
     text: "Khalil is an exceptional developer who truly understands React and responsive design. The codebase he delivered is clean, well-structured, and incredibly easy for our team to maintain.",
     avatar: memojiAvatar4,
@@ -41,7 +40,7 @@ const testimonials = [
   {
     name: "Sophia Lin",
     position: "Marketing Head @ GrowthScale",
-    text: "Abdul turned our design concepts into a highly scalable web application. His communication throughout the project was top-notch, and his technical expertise is unmatched.",
+    text: "Abdul delivered exceptional quality, clear communication, and exceeded every project expectation with professionalism.",
     avatar: memojiAvatar5,
     rating: 4.8,
   },

@@ -1,4 +1,5 @@
-import { IoStar } from "react-icons/io5"
+import { MdStars } from 'react-icons/md'
+
 
 const words= [
   "Performant",
@@ -24,7 +25,7 @@ const Tape = () => {
       {words.map(word => (
         <div key={word} className="inline-flex gap-4 items-center">
           <span className="text-gray-900 uppercase font-extrabold text-sm">{word}</span>
-          <IoStar className="size-5 text-gray-900 -rotate-12"/>
+          <MdStars className="size-5 text-gray-900 -rotate-12"/>
         </div>
       ))}
       </div>
