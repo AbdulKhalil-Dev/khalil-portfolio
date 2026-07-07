@@ -42,14 +42,14 @@ const About = () => {
         <SectionHeader
           eyebrow="About Me"
           title="Get to Know Me"
-          description="Explore my journey, my work, and the ideas that drive me every day."
+          description="Explore my journey, my work, and the ideas that inspire me every day."
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
           <Card className="h-[320px] md:col-span-2 lg:col-span-1">
             <CardHeader
               title="My Reads"
-              description="Explore the books shaping my perspectives."
+              description="Explore the books that shape my perspective."
             />
             <div className="w-40 mx-auto mt-2 md:mt-0">
               <Image src={bookImage} alt="Book cover" />

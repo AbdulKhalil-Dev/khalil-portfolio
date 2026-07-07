@@ -6,6 +6,7 @@ import Tape from './sections/Tape'
 import Testimonials from './sections/Testimonials'
 import About from './sections/About'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 
 
@@ -19,6 +20,7 @@ const page = () => {
     <Testimonials />
     <About />
     <Contact />
+    <Footer />
     </>
   )
 }
