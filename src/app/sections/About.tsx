@@ -1,12 +1,18 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Card } from "../components/Card";
-import bookImage from '@/assets/images/bookCover.jpeg'
+import bookImage from "@/assets/images/bookCover.jpeg";
 import Image from "next/image";
-import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoReact, IoLogoGithub } from "react-icons/io5";
+import {
+  IoLogoJavascript,
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoReact,
+  IoLogoGithub,
+} from "react-icons/io5";
 import { SiTailwindcss } from "react-icons/si";
-import mapImg from '@/assets/images/map-img.jpeg'
-import smileMemoji from '@/assets/images/map-ico.png'
+import mapImg from "@/assets/images/map-img.jpeg";
+import smileMemoji from "@/assets/images/map-ico.png";
 import { CardHeader } from "../components/CardHeader";
 import { ToolboxItems } from "../components/ToolboxItems";
 
@@ -20,53 +26,86 @@ const toolboxItems = [
 ];
 
 const hobbies = [
-  { title: "Coding", emoji: "👨‍💻" },
-  { title: "AI Exploration", emoji: "🤖" },
-  { title: "Web Design", emoji: "✨" },
-  { title: "Problem Solving", emoji: "🧠" },
-  { title: "Gaming", emoji: "🎮" },
-  { title: "Learning", emoji: "📖" },
-  { title: "Fitness", emoji: "🏋️" },
+  { title: "Coding", emoji: "👨‍💻", left: "5%", top: "5%" },
+  { title: "AI Exploration", emoji: "🤖", left: "50%", top: "5%" },
+  { title: "Web Design", emoji: "✨", left: "10%", top: "35%" },
+  { title: "Problem Solving", emoji: "🧠", left: "33%", top: "40%" },
+  { title: "Gaming", emoji: "🎮", left: "70%", top: "45%" },
+  { title: "Learning", emoji: "📖", left: "5%", top: "65%" },
+  { title: "Fitness", emoji: "🏋️", left: "45%", top: "70%" },
 ];
 
 const About = () => {
   return (
     <div className="py-20 flex items-center justify-center">
       <div className="container">
-      <SectionHeader
-        eyebrow="About Me"
-        title="Get to Know Me"
-        description="Explore my journey, my work, and the ideas that drive me every day."
-      />
-      <div className="mt-20">
-        <Card className="h-[320px]">
-          <CardHeader title="My Reads" description="Explore the books shaping my perspectives." /> 
-          <div className="w-40 mx-auto mt-8">
-          <Image src={bookImage} alt="Book cover" />
+        <SectionHeader
+          eyebrow="About Me"
+          title="Get to Know Me"
+          description="Explore my journey, my work, and the ideas that drive me every day."
+        />
+        <div className="mt-20 flex flex-col gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
+          <Card className="h-[320px] md:col-span-2">
+            <CardHeader
+              title="My Reads"
+              description="Explore the books shaping my perspectives."
+            />
+            <div className="w-40 mx-auto mt-2 md:mt-0">
+              <Image src={bookImage} alt="Book cover" />
+            </div>
+          </Card>
+          <Card className="h-[320px] md:col-span-3">
+            <CardHeader
+              title="My Toolbox"
+              description="Explore the technologies and tools I use to build modern, high-quality web applications."
+              className=""
+            />
+            <ToolboxItems items={toolboxItems} className="" />
+            <ToolboxItems
+              items={toolboxItems}
+              className="mt-6"
+              itemWrapperClassName="-translate-x-1/2"
+            />
+          </Card>
           </div>
-        </Card>
-        <Card className="h-[320px] p-0">
-          <CardHeader title="My Toolbox" description="Explore the technologies and tools I use to build modern, high-quality web applications." className="px-6 pt-6" /> 
-        <ToolboxItems items={toolboxItems} className="mt-6"/>
-        <ToolboxItems items={toolboxItems} className="mt-6"/>
-        </Card>
-        <Card>
-          <CardHeader title="Beyond the Code" description="Explore my interests and hobbies beyond the digital realm." /> 
-          <div>
-            {hobbies.map((hobby)=>(
-              <div key={hobby.title}>
-                <span>{hobby.title}</span>
-                <span>{hobby.emoji}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
-        <Card>
-            <Image src={mapImg} alt="map" />
-            <Image src={smileMemoji} alt="smiling memoji" />
-        </Card>
+          <Card className="h-[320px] p-0 flex flex-col">
+            <CardHeader
+              title="Beyond the Code"
+              description="Explore my interests and hobbies beyond the digital realm."
+              className="px-6 py-6"
+            />
+            <div className="relative flex-1">
+              {hobbies.map((hobby) => (
+                <div
+                  key={hobby.title}
+                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                  style={{ left: hobby.left, top: hobby.top }}
+                >
+                  <span className="font-medium text-gray-950">
+                    {hobby.title}
+                  </span>
+                  <span>{hobby.emoji}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+          <Card className="h-[320px] p-0 relative">
+            <Image
+              src={mapImg}
+              alt="map"
+              className="h-full w-full object-cover object-left-top"
+            />
+            <div className="absolute mt-14 ml-5 top-1/2 left-1/2 size-11 rounded-full flex items-center justify-center bg-gradient-to-r from-emerald-300 to-sky-400 border-2 border-gray-950/25 after:content-[''] after:absolute after:inset-0 after-outline after-outline-2 after:-outline-offset-2 after:rounded-full after:outline-slate-950/30">
+              <Image
+                src={smileMemoji}
+                alt="Smiling memoji"
+                className="size-9 rounded-full object-cover"
+              />
+            </div>
+          </Card>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
