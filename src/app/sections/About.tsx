@@ -37,7 +37,7 @@ const hobbies = [
 
 const About = () => {
   return (
-    <div className="py-20 flex items-center justify-center">
+    <div className="py-20 lg:py-28 flex items-center justify-center">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -45,8 +45,8 @@ const About = () => {
           description="Explore my journey, my work, and the ideas that drive me every day."
         />
         <div className="mt-20 flex flex-col gap-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-          <Card className="h-[320px] md:col-span-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+          <Card className="h-[320px] md:col-span-2 lg:col-span-1">
             <CardHeader
               title="My Reads"
               description="Explore the books shaping my perspectives."
@@ -55,10 +55,10 @@ const About = () => {
               <Image src={bookImage} alt="Book cover" />
             </div>
           </Card>
-          <Card className="h-[320px] md:col-span-3">
+          <Card className="h-[320px] md:col-span-3 lg:col-span-2">
             <CardHeader
               title="My Toolbox"
-              description="Explore the technologies and tools I use to build modern, high-quality web applications."
+              description="Explore the technologies and tools I use to build modern web applications."
               className=""
             />
             <ToolboxItems items={toolboxItems} className="" />
@@ -69,7 +69,8 @@ const About = () => {
             />
           </Card>
           </div>
-          <Card className="h-[320px] p-0 flex flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
+          <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
             <CardHeader
               title="Beyond the Code"
               description="Explore my interests and hobbies beyond the digital realm."
@@ -90,13 +91,13 @@ const About = () => {
               ))}
             </div>
           </Card>
-          <Card className="h-[320px] p-0 relative">
+          <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
             <Image
               src={mapImg}
               alt="map"
-              className="h-full w-full object-cover object-left-top"
+              className="h-full w-full object-cover object-center"
             />
-            <div className="absolute mt-14 ml-5 top-1/2 left-1/2 size-11 rounded-full flex items-center justify-center bg-gradient-to-r from-emerald-300 to-sky-400 border-2 border-gray-950/25 after:content-[''] after:absolute after:inset-0 after-outline after-outline-2 after:-outline-offset-2 after:rounded-full after:outline-slate-950/30">
+            <div className="absolute top-[45%] left-[53%] top-1/2 left-1/2 size-11 rounded-full flex items-center justify-center bg-gradient-to-r from-emerald-300 to-sky-400 border-2 border-gray-950/25 after:content-[''] after:absolute after:inset-0 after-outline after-outline-2 after:-outline-offset-2 after:rounded-full after:outline-slate-950/30">
               <Image
                 src={smileMemoji}
                 alt="Smiling memoji"
@@ -104,6 +105,7 @@ const About = () => {
               />
             </div>
           </Card>
+          </div>
         </div>
       </div>
     </div>

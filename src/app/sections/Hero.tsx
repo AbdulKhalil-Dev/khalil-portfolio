@@ -24,12 +24,12 @@ const Hero = () => {
       rotation={-70}>
         <WiStars className='animate-spin-slow size-20 text-white' />
       </HeroOrbit>
-      <HeroOrbit size={670} rotation={25}>
-      <WiStars className="animate-spin-slow size-12 text-white"/>
+      <HeroOrbit size={600} rotation={25}>
+      <WiStars className="animate-spin-slow size-14 text-white"/>
       </HeroOrbit>
-      <HeroOrbit size={590}
+      <HeroOrbit size={510}
       rotation={98}>
-        <WiStars className='animate-spin-reverse-slow size-10 text-white' />
+        <WiStars className='animate-spin-reverse-slow size-12 text-white' />
       </HeroOrbit>
       <HeroOrbit size={430}
       rotation={-14}>
