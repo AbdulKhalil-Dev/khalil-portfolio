@@ -10,7 +10,6 @@ import Footer from './sections/Footer'
 import ScrollToTop from './components/ScrollToTop'
 
 
-
 const page = () => {
   return (
     <>
