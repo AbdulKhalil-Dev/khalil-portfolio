@@ -1,7 +1,5 @@
 import { HiSparkles } from "react-icons/hi2";
 
-
-
 const words= [
   "Performant",
   "Accessible",
