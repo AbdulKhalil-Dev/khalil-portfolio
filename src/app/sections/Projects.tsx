@@ -52,7 +52,7 @@ const PortfolioProjects = [
 
 export const Projects = () => {
   return (
-    <section className="flex justify-center items-center pb-16 lg:py-24">
+    <section id="projects" className="flex justify-center items-center pb-16 lg:py-24">
       <div className="container">
         <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences." />          
         <div className="flex flex-col mt-10 md:mt-20 gap-20">

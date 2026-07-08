@@ -37,7 +37,7 @@ const hobbies = [
 
 const About = () => {
   return (
-    <div className="py-20 lg:py-28 flex items-center justify-center">
+    <section id="about" className="py-20 lg:py-28 flex items-center justify-center">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -108,7 +108,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

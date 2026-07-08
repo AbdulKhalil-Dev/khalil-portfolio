@@ -7,6 +7,7 @@ import Testimonials from './sections/Testimonials'
 import About from './sections/About'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -21,6 +22,7 @@ const page = () => {
     <About />
     <Contact />
     <Footer />
+    <ScrollToTop />
     </>
   )
 }

@@ -4,7 +4,7 @@ import grainImg from "@/assets/images/grain.jpg"
 
 const Contact = () => {
   return (
-    <div className="flex items-center justify-center py-16 pt-12 lg:py-24 lg:pt-20">
+    <section id="contact" className="flex items-center justify-center py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="bg-gradient-to-r from-emerald-300 to bg-sky-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden z-0">
         <div className="absolute inset-0 opacity-5 -z-10" style={{
           backgroundImage: `url(${grainImg.src})`
@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    </div>
+    </section>
   );
 };
 
