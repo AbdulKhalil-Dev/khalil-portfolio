@@ -23,13 +23,19 @@ const Hero = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
-        <HeroOrbit size={775} rotation={-70}>
+        <HeroOrbit size={775} rotation={-70} shouldOrbit orbitDuration="20s">
           <WiStars className="animate-spin-slow size-20 text-white" />
         </HeroOrbit>
-        <HeroOrbit size={610} rotation={130}>
+        <HeroOrbit
+          size={610}
+          rotation={130}
+          shouldOrbit
+          reverseOrbit
+          orbitDuration="30s"
+        >
           <WiStars className="animate-spin-slow size-14 text-white" />
         </HeroOrbit>
-        <HeroOrbit size={465} rotation={10}>
+        <HeroOrbit size={465} rotation={10} shouldOrbit orbitDuration="30s">
           <WiStars className="animate-spin-reverse-slow size-12 text-white" />
         </HeroOrbit>
         <HeroOrbit size={315} rotation={80}>
@@ -38,14 +44,14 @@ const Hero = () => {
         <HeroOrbit size={540} rotation={50}>
           <IoStar className="size-6 text-white/10" />
         </HeroOrbit>
-        <HeroOrbit size={730} rotation={-28}>
-          <IoStar className="size-10 text-white/10" />
+        <HeroOrbit size={650} rotation={-28}>
+          <IoStar className="size-6 text-white/10" />
         </HeroOrbit>
         <HeroOrbit size={710} rotation={120}>
           <IoStar className="size-8 text-white/10" />
         </HeroOrbit>
-        <HeroOrbit size={585} rotation={144}>
-          <IoStar className="animate-spin-slow size-6 text-white/10" />
+        <HeroOrbit size={750} rotation={155}>
+          <IoStar className="animate-spin-slow size-4 text-white/10" />
         </HeroOrbit>
         <HeroOrbit size={510} rotation={-40}>
           <IoStar className="size-5 text-white/10" />
@@ -69,9 +75,13 @@ const Hero = () => {
             className="size-[120px] rounded-t-full border border-gray-950"
           />
           <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 inline-flex items-center gap-3.5 rounded-lg">
-            <div className="relative flex h-1.5 w-1.5 items-center justify-center">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-600 drop-shadow-[0_0_8px_#16a34a]"></span>
+            <div className="relative flex h-2 w-2 items-center justify-center">
+              <span className="absolute h-full w-full animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite] rounded-full bg-emerald-400/70"></span>
+              <span className="absolute h-full w-full rounded-full bg-emerald-400/25 blur-[2px]"></span>
+              <span
+                className="relative h-2 w-2 rounded-full bg-emerald-500 
+              shadow-[0_0_10px_rgba(16,185,129,0.7)]"
+              ></span>
             </div>
             <div className="text-sm font-semibold">
               Available for new projects
@@ -89,11 +99,17 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="#projects" className="inline-flex items-center gap-2 border border-white/15 hover:bg-gray-950/10 px-5 h-12 rounded-xl">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 border border-white/15 hover:bg-gray-950/10 px-5 h-12 rounded-xl"
+          >
             <span className="font-semibold">Explore My Work</span>
             <BsArrowDown className="animate-smooth-bounce" />
           </a>
-          <a href="#contact" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-5 rounded-xl">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-5 rounded-xl"
+          >
             <span className="animate-waving inline-block origin-bottom-right">
               👋
             </span>
