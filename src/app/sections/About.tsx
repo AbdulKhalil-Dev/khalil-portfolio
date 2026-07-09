@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useRef } from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Card } from "../components/Card";
 import bookImage from "@/assets/images/bookCover.jpeg";
@@ -15,6 +16,7 @@ import mapImg from "@/assets/images/map-img.jpeg";
 import smileMemoji from "@/assets/images/map-ico.png";
 import { CardHeader } from "../components/CardHeader";
 import { ToolboxItems } from "../components/ToolboxItems";
+import { motion } from "motion/react";
 
 
 const toolboxItems = [
@@ -37,6 +39,7 @@ const hobbies = [
 ];
 
 const About = () => {
+  const constrainRef = useRef(null);
   return (
     <section id="about" className="py-20 lg:py-28 flex items-center justify-center">
       <div className="container">
@@ -76,18 +79,20 @@ const About = () => {
               description="Explore my interests and hobbies beyond the digital realm."
               className="px-6 py-6"
             />
-            <div className="relative flex-1">
+            <div className="relative flex-1" ref={constrainRef}>
               {hobbies.map((hobby) => (
-                <div
+                <motion.div
                   key={hobby.title}
                   className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                   style={{ left: hobby.left, top: hobby.top }}
+                  drag
+                  dragConstraints={constrainRef}
                 >
                   <span className="font-medium text-gray-950">
                     {hobby.title}
                   </span>
                   <span>{hobby.emoji}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </Card>

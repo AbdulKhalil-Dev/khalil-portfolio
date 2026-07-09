@@ -1,7 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { TechIcon } from "./TechIcon";
 import { Fragment } from "react/jsx-runtime";
-import { Key } from "lucide-react";
 
 export const ToolboxItems = ({
   items,
