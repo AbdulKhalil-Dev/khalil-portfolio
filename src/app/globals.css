@@ -86,7 +86,7 @@ html {
 }
 
 @utility animate-move-left {
-  animation: move-left 10s linear infinite;
+  animation: move-left 1s linear infinite;
 }
 
 @keyframes move-right {
@@ -100,5 +100,5 @@ html {
 }
 
 @utility animate-move-right {
-  animation: move-right 10s linear infinite;
+  animation: move-right 1s linear infinite;
 }

@@ -69,7 +69,7 @@ const About = () => {
             <ToolboxItems
               items={toolboxItems}
               className="mt-6"
-              itemWrapperClassName="animate-move-right [animation-duration:15s]"/>
+              itemWrapperClassName="animate-move-right [animation-duration:60s]"/>
           </Card>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">

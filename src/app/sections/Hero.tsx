@@ -83,7 +83,7 @@ const Hero = () => {
           <Image
             src={myImg}
             alt="Abdul Khalil Developer"
-            className="size-[120px] rounded-t-full border border-gray-950"
+            className="size-[120px] rounded-t-full"
           />
           <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 inline-flex items-center gap-3.5 rounded-lg">
             <div className="relative flex h-2 w-2 items-center justify-center">
