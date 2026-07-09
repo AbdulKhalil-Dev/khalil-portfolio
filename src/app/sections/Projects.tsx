@@ -88,9 +88,9 @@ export const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                    <button className="group bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Visit Live Site</span>
-                      <BsArrowUpRight className="size-4" />
+                      <BsArrowUpRight className="size-3 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </button>
                   </a>
                 </div>

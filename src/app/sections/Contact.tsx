@@ -33,10 +33,10 @@ const Contact = () => {
           <div>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer"
+              className="group text-white bg-gray-900 hover:text-emerald-300 transition-colors duration-300 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer"
             >
               <span className="font-semibold">Contact Me</span>
-              <BsArrowUpRight className="size-4" />
+              <BsArrowUpRight className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </button>
           </div>
         </div>

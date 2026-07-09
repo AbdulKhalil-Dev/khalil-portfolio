@@ -34,9 +34,10 @@ const Footer = () => {
               <a
                 href={link.href}
                 key={link.title}
+                aria-label={link.title}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-1.5 cursor-pointer text-white/70 hover:text-emerald-300 transition-colors duration-300"
+                className="group inline-flex items-center gap-1.5 text-white/70 hover:text-emerald-300 transition-colors duration-300"
               >
                 <span className="font-semibold">{link.title}</span>
                 <BsArrowUpRight className="size-3 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

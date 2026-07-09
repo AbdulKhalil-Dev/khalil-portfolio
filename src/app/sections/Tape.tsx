@@ -1,18 +1,18 @@
 import { HiSparkles } from "react-icons/hi2";
 
 const words= [
+  "Responsive",
   "Performant",
   "Accessible",
   "Secure",
   "Interactive",
   "Scalable",
   "Creative",
-  "User Friendly",
-  "Responsive",
+  "User-Friendly",
   "Maintainable",
-  "Search Optimized",
-  "Useable",
-  "Reliable"
+  "SEO-Friendly",
+  "Reliable",
+  "Modern",
 ]
 
 const Tape = () => {
