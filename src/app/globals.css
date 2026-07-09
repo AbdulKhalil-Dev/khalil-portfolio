@@ -81,3 +81,18 @@ html {
 @utility animate-smooth-bounce {
   animation: smooth-bounce 2s ease-in-out infinite;
 }
+
+/* Tape */
+@keyframes move-left {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-move-left {
+  animation: move-left 10s linear infinite;
+}

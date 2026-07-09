@@ -8,7 +8,7 @@ export const HeroOrbit = ({
   shouldOrbit = false,
   reverseOrbit = false,
   orbitDuration = "20s",
-  shouldSpin = false,
+  shouldSpin = true,
   spinDuration = "5s",
 }: PropsWithChildren<{
   size: number;
