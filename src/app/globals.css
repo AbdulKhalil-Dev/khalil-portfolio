@@ -39,21 +39,13 @@ html {
 }
 
 /* Custom Keyframes for Orbit Rotation */
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
 }
 
-@utility animate-spin-slow {
-  animation: spin-slow 20s linear infinite;
-}
-
-@utility animate-spin-reverse-slow {
-  animation: spin-slow 25s linear infinite reverse;
+@utility animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
 }
 
 /*for 👋 Custom Keyframes */
@@ -82,7 +74,7 @@ html {
   animation: smooth-bounce 2s ease-in-out infinite;
 }
 
-/* Tape */
+/* moving */
 @keyframes move-left {
   from {
     transform: translateX(0%);
@@ -95,4 +87,18 @@ html {
 
 @utility animate-move-left {
   animation: move-left 10s linear infinite;
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@utility animate-move-right {
+  animation: move-right 10s linear infinite;
 }

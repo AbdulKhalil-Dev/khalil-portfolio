@@ -16,6 +16,7 @@ import smileMemoji from "@/assets/images/map-ico.png";
 import { CardHeader } from "../components/CardHeader";
 import { ToolboxItems } from "../components/ToolboxItems";
 
+
 const toolboxItems = [
   { title: "JavaScript", iconType: IoLogoJavascript },
   { title: "HTML5", iconType: IoLogoHtml5 },
@@ -61,12 +62,11 @@ const About = () => {
               description="Explore the technologies and tools I use to build modern web applications."
               className=""
             />
-            <ToolboxItems items={toolboxItems} className="" />
+            <ToolboxItems items={toolboxItems} className="" itemWrapperClassName="animate-move-left [animation-duration:30s]"/>
             <ToolboxItems
               items={toolboxItems}
               className="mt-6"
-              itemWrapperClassName="-translate-x-1/2"
-            />
+              itemWrapperClassName="animate-move-right [animation-duration:15s]"/>
           </Card>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
@@ -97,11 +97,13 @@ const About = () => {
               alt="map"
               className="h-full w-full object-cover object-center"
             />
-            <div className="absolute top-[45%] left-[53%] top-1/2 left-1/2 size-11 rounded-full flex items-center justify-center bg-gradient-to-r from-emerald-300 to-sky-400 border-2 border-gray-950/25 after:content-[''] after:absolute after:inset-0 after-outline after-outline-2 after:-outline-offset-2 after:rounded-full after:outline-slate-950/30">
+            <div className="absolute top-[45%] left-[55%] size-10 rounded-full flex items-center justify-center border-2 border-gray-950/25 after:content-[''] after:absolute after:inset-0 after-outline after-outline-2 after:-outline-offset-2 after:rounded-full after:outline-slate-950/30">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 z-20 animate-ping [animation-duration:2000ms]"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
               <Image
                 src={smileMemoji}
                 alt="Smiling memoji"
-                className="size-9 rounded-full object-cover"
+                className="size-8 rounded-full object-cover"
               />
             </div>
           </Card>
